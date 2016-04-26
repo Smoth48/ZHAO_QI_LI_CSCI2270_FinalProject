@@ -103,7 +103,7 @@ void DungeonGame::addLocation(string name)
     }
     newLocation->prev = tmp;
     tmp->next = newLocation;
-    cout << "location added" << endl;
+    //cout << "location added" << endl;
 }
 
 void DungeonGame::deleteLocation()

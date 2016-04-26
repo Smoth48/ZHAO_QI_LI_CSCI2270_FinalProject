@@ -28,15 +28,17 @@ int main()
     myGame.setName(playerName);
     cout << "Welcome " << playerName << "!" << endl;
     sleep(1);
-    cout << "Now you are the warrior from the Nowhere Kingdom." << endl;
+    cout << "Now you are the savior from the Nowhere Kingdom." << endl;
     sleep(1);
-    cout << "You need to recuse the princess from a Dungeon." << endl;
+    cout << "You need to recuse the princess from the Inferno." << endl;
     sleep(1);
-    cout << "In the end of the Dungeon, there is a big Monster called Big Monster King." << endl;
+    cout << "In the end of the Dungeon, there is a boss--The Dark One." << endl;
     sleep(1);
-    cout << "You need to beat the Big Monster King.\n";
+    cout << "You need to beat the Dark One.\n";
     cout << "and bring the princess back to the Kingdom." << endl;
     sleep(1);
+    cout << "Press any key to continue..." << endl;
+    cin.get();
     myGame.clearScreen();
     string input;
     // start the game
@@ -46,7 +48,7 @@ int main()
         {
 label1:
             myGame.displayUI();
-            cout << "You are in front of Dungeon's Gate" << endl;
+            cout << "You are in front of the gate of Inferno" << endl;
             sleep(1);
             cout << "Would you like to open the gate? (y/n)" << endl;
             while(true)
@@ -78,9 +80,9 @@ label1:
         {
 label2:
             myGame.displayUI();
-            cout << "Now you are in the big Hall of the Dungeon." << endl;
+            cout << "Now you are in the big Hall of the Inferno." << endl;
             sleep(1);
-            cout << "There are three door in front of you." << endl;
+            cout << "There are three doors in front of you." << endl;
             sleep(1);
             cout << "Would you like to go left(l), middle(m), right(r), or back(b)?" << endl;
             while(true)
@@ -128,9 +130,9 @@ label2:
             myGame.findSword();
 label3:
             myGame.displayUI();
-            cout << "This is the room where Big Monster King stores his best sword." << endl;
+            cout << "This is the room where the Dark One stores his best sword." << endl;
             sleep(1);
-            cout << "You find a decent sword named Big Treasure Sword." << endl;
+            cout << "You find a decent sword named Excalibur." << endl;
             sleep(1);
             cout << "Would you like to go back(b)?" << endl;
             while(true)
@@ -158,7 +160,7 @@ label4:
             myGame.fightGuardSwitch();
 label5:
             myGame.displayUI();
-            cout << "Now you are in the room where Big Monster King stores his best shield." << endl;
+            cout << "Now you are in the room where the Dark One stores his best shield--Aegis." << endl;
             sleep(1);
             cout << "However there is a guard in front of you." << endl;
             sleep(1);
@@ -184,7 +186,7 @@ label5:
                         myGame.displayUI();
                         cout << "You have beaten the guard!" << endl;
                         sleep(1);
-                        cout << "You find a decent shield!" << endl;
+                        cout << "You find a decent shield--Aegis!" << endl;
                         sleep(1);
 label6:
                         cout << "Would you like to go back(b)?" << endl;
@@ -240,16 +242,15 @@ label6:
 label7:
             myGame.displayUI();
             cout << "Now you are in the corridor." << endl;
-            cout << "On the wall it says, you need a sword and a shield to pass here." << endl;
-            cout << "Would you like to continue(y), or go back (b)?" << endl;
+            sleep(1);
+            cout << "On the wall it says, you need Excalibur and Aegis to pass here." << endl;
+            sleep(1);
+            cout << "Would you like to continue(y) or go back (b)?" << endl;
             while(true)
             {
                 cin>>input;
                 if(input == "y")
                 {
-                    bool flag = myGame.passCorridor();
-                    if(flag == true)
-                    {
                         myGame.setLocation("FIANLBOSS");
                         myGame.addLocation("FINALBOSS");
                         cout << "You find a bottle of potion in the corridor." << endl;
@@ -259,16 +260,6 @@ label7:
                         myGame.addHP();
                         myGame.clearScreen();
                         break;
-                    }
-                    else
-                    {
-                        cout << "It is a trap!" << endl;
-                        cout << "The sword and shield are the keys to pass the corridor." << endl;
-                        cout << "You died" << endl;
-                        myGame.setLocation("GAMEOVER");
-                        goto label99;
-                    }
-
                 }
                 else if(input == "b")
                 {
@@ -293,7 +284,8 @@ label8:
             while(true)
             {
                 myGame.displayUI();
-                cout << "Now you are facing the final enemy: Big Monster King." << endl;
+                cout << "Now you are facing the final enemy: The Dark One." << endl;
+                sleep(1);
                 cout << "Would you like to fight(f), or run back(b)?" << endl;
                 cin>>input;
                 if(input == "f")
@@ -301,9 +293,9 @@ label8:
                     int *damages = myGame.fightWithBoss();
                     int playerDamage = damages[0];
                     int bossDamge = damages[1];
-                    cout << "You caused " << playerDamage << " damages to the Big Monster King." << endl;
+                    cout << "You caused " << playerDamage << " damages to The Dark One." << endl;
                     sleep(2);
-                    cout << "The Big Monster King caused " << bossDamge << " damages to you." << endl;
+                    cout << "The Dark One caused " << bossDamge << " damages to you." << endl;
                     sleep(2);
                     myGame.clearScreen();
                     if(myGame.getBossHP() <= 0)
@@ -343,9 +335,9 @@ label8:
         {
             myGame.clearScreen();
             myGame.HappyEnding();
-            cout << "Congratulation! You just beaten the Big Monster King!" << endl;
+            cout << "Congratulation! You just beaten The Dark One!" << endl;
             sleep(1);
-            cout << "Now you can bring the princess back to the Kingdom!" << endl;
+            cout << "You save the princess from the Inferno!" << endl;
             sleep(1);
             cout << "Thanks for playing!" << endl;
             sleep(1);
