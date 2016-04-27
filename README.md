@@ -28,7 +28,7 @@ CSCI 2270 Data Structure---- Final Project
 	N/A
 
 --Open issues/ Bugs:
-  1 During the game, you can go back to the hall and pick up the potion in the corridor as many times as you want to keep the you alive. We made that intentionally, since we do not want the user to end the game really soon.
-  2 The image of the characters are used by the simple Print to show the output of the image. Hence the location of the characters in the game might be slightly weird since the mislocation.
+  1. During the game, you can go back to the hall and pick up the potion in the corridor as many times as you want to keep the you alive. We made that intentionally, since we do not want the user to end the game really soon.
+  2. The image of the characters are used by the simple Print to show the output of the image. Hence the location of the characters in the game might be slightly weird since the mislocation.
 
 
