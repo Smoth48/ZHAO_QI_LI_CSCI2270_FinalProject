@@ -2,20 +2,21 @@ Read Me
 CSCI 2270 Data Structure---- Final Project
 
 
---Project Summary:
+--Project Summary:       
             Our project is a game based on Dungeon Game, and is the simple version of that. We used C++ programming to build the code by using class, struct, linked list, dynamic memory which learned during this semester.
 
 
---How to Run:
+--How to Run:       
             Firstly the program will require you enter the name of the user(player).
             And then follow the steps and sentences in the code.
             Next, you can choose to fight with the boss and the guard in the game, also by pressing the simple key.
 
 
---Dependencies
+--Dependencies:      
+            N/A
 
 
---System Requirements:
+--System Requirements:    
             Open the  *cbp file with Code Blocks.
 
 
