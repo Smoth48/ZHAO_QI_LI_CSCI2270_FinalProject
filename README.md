@@ -20,12 +20,12 @@ CSCI 2270 Data Structure---- Final Project
             Open the  *cbp file with Code Blocks.
 
 
---Group Members:
-            Hanwen Zhao,
-            Zhenlong Li,
+--Group Members:      
+            Hanwen Zhao,     
+            Zhenlong Li,     
             Qiannan Qi
 
---Contributors:
+--Contributors:      
 	N/A
 
 --Open issues/ Bugs:
