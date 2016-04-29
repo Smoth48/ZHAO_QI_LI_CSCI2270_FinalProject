@@ -7,7 +7,8 @@ CSCI 2270 Data Structure---- Final Project
 
 
 --How to Run:       
-	If you have permission issues to open the program, start a new project from Code Blocks, copy the content in main.cpp and add header and source file by right click the project. If you have any questions, please contact me via hazh1387@colorado.edu.
+	If you have permission issues to open the program, download the zip file or start a new project from Code Blocks, copy the content in main.cpp and add header and source file by right click the project. If you have any questions, please contact me via hazh1387@colorado.edu.
+	
             Firstly the program will require you enter the name of the user(player).
             And then follow the steps and sentences in the code.
             Next, you can choose to fight with the boss and the guard in the game, also by pressing the simple key.
