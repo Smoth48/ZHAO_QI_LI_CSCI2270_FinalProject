@@ -170,13 +170,8 @@ label5:
                 cin>>input;
                 if(input == "f")
                 {
-                    int *damages = myGame.fightWithGuard();
-                    int playerDamage = damages[0];
-                    int guardDamge = damages[1];
-                    cout << "You caused " << playerDamage << " damages to the Guard." << endl;
-                    sleep(2);
-                    cout << "The Guard caused " << guardDamge << " damages to you." << endl;
-                    sleep(2);
+                    myGame.fightWithGuard();
+
                     myGame.clearScreen();
                     if(myGame.getGuardHP() <= 0)
                     {
@@ -290,13 +285,8 @@ label8:
                 cin>>input;
                 if(input == "f")
                 {
-                    int *damages = myGame.fightWithBoss();
-                    int playerDamage = damages[0];
-                    int bossDamge = damages[1];
-                    cout << "You caused " << playerDamage << " damages to The Dark One." << endl;
-                    sleep(2);
-                    cout << "The Dark One caused " << bossDamge << " damages to you." << endl;
-                    sleep(2);
+                    myGame.fightWithBoss();
+
                     myGame.clearScreen();
                     if(myGame.getBossHP() <= 0)
                     {
