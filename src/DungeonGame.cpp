@@ -135,14 +135,16 @@ void DungeonGame::fightGuardSwitch()
     }
 }
 
-int *DungeonGame::fightWithGuard()
+void DungeonGame::fightWithGuard()
 {
     int playerDamage = newPlayer->att - newGuard->def;
     int guardDamage = newGuard->att - newPlayer->def;
     newPlayer->hp -= guardDamage;
     newGuard->hp -= playerDamage;
-    int damages[] = {playerDamage, guardDamage};
-    return damages;
+    cout << "You caused " << playerDamage << " damages to the Guard." << endl;
+    sleep(2);
+    cout << "The Guard caused " << guardDamage << " damages to you." << endl;
+    sleep(2);
 }
 
 int DungeonGame::getGuardHP()
@@ -190,14 +192,16 @@ void DungeonGame::fightBossSwitch()
     }
 }
 
-int *DungeonGame::fightWithBoss()
+void DungeonGame::fightWithBoss()
 {
     int playerDamage = newPlayer->att - newBoss->def;
     int bossDamage = newBoss->att - newPlayer->def;
     newPlayer->hp -= bossDamage;
     newBoss->hp -= playerDamage;
-    int damages[] = {playerDamage, bossDamage};
-    return damages;
+    cout << "You caused " << playerDamage << " damages to The Dark One." << endl;
+    sleep(2);
+    cout << "The Dark One caused " << bossDamage << " damages to you." << endl;
+    sleep(2);
 }
 
 int DungeonGame::getBossHP()
